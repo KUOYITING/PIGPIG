@@ -9,19 +9,33 @@
     <link rel="shortcut icon" href="https://img.icons8.com/metro/26/000000/pig.png" type="image/x-icon">
     <!-- ================= Favicon ================== -->
     <!-- Standard -->
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/jquery.dropotron.min.js"></script>
-     <script src="js/skel.min.js"></script>
-     <script src="js/skel-layers.min.js"></script>
-    <script src="js/init.js"></script>
-<style> 
-body {
-  background-image: url("backg1.png");
-  background-repeat: no-repeat;
+   
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+body{
+margin:0px;
+padding:0px;
+background:#fff url("backg1.png") center center fixed no-repeat;　//設定背景圖片的呈現方式
+background-size: cover;　//設定背景圖片的填滿方式
+font-size: 30px;
+} 
+input{border:0;
+  background-color:#FFB7DD;
+  color:#fff;
+  border-radius:10px;
+  cursor:pointer;
+font-family:'Just Another Hand', cursive;
+font-size: 30px;
+}
+
+
+input:hover{
+  color:#FFB7DD;
+  background-color:#fff;
+  border:2px #FFB7DD solid;
+font-family:'Just Another Hand', cursive;
+ font-size: 30px;
 }
 
 </style>
@@ -31,10 +45,13 @@ body {
      <div id="banner">
                             <div class="container">
                                 <section>
-                                    <div style="top:500px;left:525px;position:absolute;">
-                                        <a href="index-cut.html" class="button alt">Enter</a>
+                                    <div style="top:450px;left:570px;position:absolute;">
+                                        <a href="index-cut.html" class="button alt">
+                                        	<input type="button" value="Enter" name="Enter" style="width:150px;height:50px;" >
+                                        	</a>
                                     </div>
-                                </section>          
+                                </section>   
+
                             </div>
                         </div>
    
