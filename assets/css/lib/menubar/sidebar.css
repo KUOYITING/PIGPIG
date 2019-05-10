@@ -635,12 +635,24 @@ html.rtl .sidebar-hide .sidebar.sidebar-shrink.sidebar-hide-to-small ~ .content-
 }
 
 .hamburger.is-active .line:nth-child(2) {
-    transform: translateX(-5px);
+    transform: translateX(5.5px);
     width: 20px;
     height: 3px;
 }
-
 .hamburger.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+    -ms-transform: translateY(3px) rotate(-45deg);
+    -o-transform: translateY(3px) rotate(-45deg);
+    transform: translateY(3px) rotate(-45deg);
+}
+
+.hamburger.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-3px) rotate(45deg);
+    -ms-transform: translateY(-3px) rotate(45deg);
+    -o-transform: translateY(-3px) rotate(45deg);
+    transform: translateY(-3px) rotate(45deg);
+}
+/*.hamburger.is-active .line:nth-child(1) {
     -webkit-transform: translateY(3px) rotate(45deg);
     -ms-transform: translateY(3px) rotate(45deg);
     -o-transform: translateY(3px) rotate(45deg);
@@ -652,4 +664,4 @@ html.rtl .sidebar-hide .sidebar.sidebar-shrink.sidebar-hide-to-small ~ .content-
     -ms-transform: translateY(-3px) rotate(-45deg);
     -o-transform: translateY(-3px) rotate(-45deg);
     transform: translateY(-3px) rotate(-45deg);
-}
+}*/
