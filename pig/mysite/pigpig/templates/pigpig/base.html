@@ -82,10 +82,6 @@
         </div>
     </div>
     
-
-    {% for taste in tastes %}
-    {% for cooking in cookings %}
-    {% for recipe in recipes %}
   <div id="canvas-overlay"></div>
     <div class="boxed-page">
         <nav id="navbar-header" class="navbar navbar-expand-lg">
@@ -104,9 +100,9 @@
   <div class="container">
     <div class="row d-flex align-items-center">
         <div class="col-lg-6 hero-left">
-            <h1 class="display-4 mb-5">About <br>{% block title %}{{ taste.name }}{% endblock %}</h1>
+            <h1 class="display-4 mb-5">About <br>{% block title %}{% endblock %}</h1>
             <div class="mb-2">
-                <a class="btn btn-primary btn-shadow btn-lg" href="{% block href1 %}{% endblock %}" role="button">Explore More</a>
+                <a class="btn btn-primary btn-shadow btn-lg" href="#Taste" role="button">Explore More</a>
                 
             </div>
                        
@@ -144,8 +140,8 @@
                 <div class="col-lg-5 col-md-6 align-self-center py-5">
                     <h2 class="special-number">Taste</h2>
                     <div class="dishes-text">
-                        <h3><span>{% block name1 %}{{ taste.name }}{% endblock %}</span><br>{% block part %}{{ taste.english }}{% endblock %}</h3>
-                        <p class="pt-3">{% block content1 %}{{ taste.content }}{% endblock %}</p>
+                        <h3><span>{% block name1 %}{% endblock %}</span><br>{% block part %}{% endblock %}</h3>
+                        <p class="pt-3">{% block content1 %}{% endblock %}</p>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
@@ -159,8 +155,8 @@
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
                     <h2 class="special-number">Cooking</h2>
                     <div class="dishes-text">
-                        <h3><span>{% block name2 %}{{ cooking.name }}{% endblock %}</span><br> 料理方式</h3>
-                        <p class="pt-3">{% block content2 %}{{ cooking.content }}{% endblock %}</p>
+                        <h3><span>{% block name2 %}{% endblock %}</span><br> 料理方式</h3>
+                        <p class="pt-3">{% block content2 %}{% endblock %}</p>
                     </div>
                 </div>
             </div>
@@ -168,8 +164,8 @@
                 <div class="col-lg-5 col-md-6 align-self-center py-5">
                     <h2 class="special-number">Recipe</h2>
                     <div class="dishes-text">
-                        <h3><span>{% block name3 %}{{ recipe.name }}{% endblock %}</span><br>{% block tag %}{{ recipe.tag }}{% endblock %}</h3>
-                        <p class="pt-3">{% block content3 %}{{ recipe.content }}{% endblock %}</p>
+                        <h3><span>{% block name3 %}{% endblock %}</span><br>{% block tag %}{% endblock %}</h3>
+                        <p class="pt-3">{% block content3 %}{% endblock %}</p>
                         <a href="{% block href2 %}{% endblock %}" class="btn-primary mt-3">Recipe</a>
                     </div>
                 </div>
@@ -180,9 +176,7 @@
         </div>
     </div>
 </section>
-{% endfor %}
-{% endfor %}
-{% endfor %}
+
 <!-- End of Special Dishes Section -->      <!-- Menu Section -->
 
     <!-- External JS -->
