@@ -7,35 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pig Pig</title>
     <link rel="shortcut icon" href="https://img.icons8.com/metro/26/000000/pig.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css?family=Boogaloo|Patrick+Hand&display=swap" rel="stylesheet">
     <!-- ================= Favicon ================== -->
     <!-- Standard -->
-   
+
+<body>
+    <div class="bg">
+        <img src="backg1.png">
+    </div>
+</body>   
+
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -999;
+        }
+        .bg img {
+            min-height: 100%;
+            width: 100%;
+        }
+
 body{
 margin:0px;
 padding:0px;
-background:#fff url("backg1.png") center center fixed no-repeat;　//設定背景圖片的呈現方式
-background-size: cover;　//設定背景圖片的填滿方式
+background:#fff url("backg1.png") center no-repeat fixed;　//設定背景圖片的呈現方式
+background-size: cover ;　//設定背景圖片的填滿方式
 font-size: 30px;
 } 
 input{border:0;
-  background-color:#FFB7DD;
+  background-color:#FFC0CB;
   color:#fff;
   border-radius:10px;
   cursor:pointer;
-font-family:'Just Another Hand', cursive;
+font-family: 'Boogaloo', cursive;
 font-size: 30px;
 }
 
 
 input:hover{
-  color:#FFB7DD;
+  color:#FFC0CB;
   background-color:#fff;
   border:2px #FFB7DD solid;
-font-family:'Just Another Hand', cursive;
- font-size: 30px;
+font-family:'Boogaloo', cursive;
+font-size: 30px;
 }
 
 </style>
